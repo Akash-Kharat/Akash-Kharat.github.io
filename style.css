@@ -6,11 +6,14 @@ body{
   margin: 0px;
   padding: 0px;
   font: popins;
+  background-color: #23cdae1f;
 }
-
+.banner{
+  padding: 0.1rem;
+}
 #main{
   width: 100%;
-  height: 55vh;
+  /* height: 55vh; */
   position: relative;
 }
 nav{
@@ -28,8 +31,11 @@ nav{
 
 .logo img{
   height: 60px;
+  margin-left: 2rem;
 }
-
+.logo {
+  display: flex;
+}
 .menu{
   list-style: none;
   display: flex;
@@ -57,62 +63,56 @@ a{
   border-bottom: 2px solid #39bfbd;
 }
 
-.image{
-  width: 500px;
-  height: 500px;
-}
 
-.image img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.content{
-  display: flex;
-  width: 90%;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.main-text{
-  width: 500px;
-}
-
-.main-text h1{
-  font-size: 3.5em;
-  color: #1c3548;
-  margin: 0px 0px 10px 0px;
-  line-height: 60px;
-}
-.main-text p{
-  color: gray;
-}
-
-.resume-btn{
-  width: 190px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #1db096;
-  border-radius: 20px;
-  box-shadow: 5px 10px 30px rgba(24,139,119,0.2);
-}
-
-.resume-btn:hover{
-  background-color: #23cdaf;
-  transition: all ease 0.2s;
-
-}
 
 .menu li a:hover{
   background-color: #23cdaf;
   color: white;
   box-shadow: 5px 10px 30px rgba(24,139,119,0.2);
   transition: all ease 0.2s;
+}
+
+.body{
+  /* margin: 1rem auto; */
+  display: block;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.gitdata img{
+  width: auto;
+}
+
+footer{
+  padding: 0.1rem;
+  color: whitesmoke;
+  background: #313736c5;
+  display: flex;
+  justify-content: space-around;
+}
+.connect a img{
+  width: 100px;
+}
+.supportme p a img {
+  height: 2rem;
+  width: auto;
+}
+.project{
+  text-align: center;
+}
+@media  screen and  (max-width:674px){
+  .main-content{
+      display: flex;
+      flex-direction: column;
+  }
+  .gitdata{
+  display: flex;
+  flex-direction: column;
+}
+.body{
+  /* margin: 1rem auto; */
+  display: block;
+    margin: 0 auto;
+}
 }
