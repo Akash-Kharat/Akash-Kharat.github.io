@@ -6,7 +6,7 @@ body{
   margin: 0px;
   padding: 0px;
   font: popins;
-  background-color: #23cdae1f;
+  background: url(./assets/bg.png) no-repeat fill;
 }
 .banner{
   padding: 0.1rem;
@@ -28,59 +28,29 @@ nav{
   box-shadow: 5px 10px 30px rgba(0, 0,0,0.02);
   z-index: 1;
 }
-
-.logo img{
-  height: 60px;
-  margin-left: 2rem;
-}
-.logo {
-  display: flex;
-}
-.menu{
-  list-style: none;
-  display: flex;
-}
-
-.menu li a{
-  height: 40px;
-  line-height: 43px;
-  margin: 3px;
-  padding: 0px, 22px;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: gray;
-}
 a{
   text-decoration: none;
+  color: darkblue;
 }
-
-.hey{
-  color: #39bfbd;
-  font-weight: 500;
-  font-size: 0.9em;
-  border-bottom: 2px solid #39bfbd;
-}
-
-
-
-.menu li a:hover{
-  background-color: #23cdaf;
-  color: white;
-  box-shadow: 5px 10px 30px rgba(24,139,119,0.2);
-  transition: all ease 0.2s;
-}
-
 .body{
   /* margin: 1rem auto; */
   display: block;
     margin-left: 10rem;
     margin-right: 10rem;
 }
-
-
-.gitdata img{
+.tools p{
+  display: flex;
+  /* margin: 0 auto; */
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 75px;
+  /* background-color: yellow; */
+}
+.gitdata{
+  display: flex;
+  justify-content: space-evenly;
+}
+.gitdata a img{
   width: auto;
 }
 
@@ -107,12 +77,23 @@ footer{
       flex-direction: column;
   }
   .gitdata{
-  display: flex;
+    display: flex;
   flex-direction: column;
+  align-items: center;
+  }
+  .gitdata a img{
+  
+  width: 450px;
+  margin: 0 auto;
 }
 .body{
   /* margin: 1rem auto; */
   display: block;
-    margin: 0 auto;
+  margin: 0;
+}
+.supportme p a img {
+  height: 2rem;
+  width: auto;
+  margin-left: 1rem;
 }
 }
